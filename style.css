@@ -39,11 +39,11 @@ nav {
   font-family: 'Montserrat', sans-serif;
 }
 
-
 .logo-link {
   display: flex;
   align-items: center;
 }
+
 .logo-image {
   height: 40px;       /* Chiều cao mặc định trên máy tính */
   max-height: 8vw;    /* Giới hạn chiều cao tối đa theo % chiều rộng màn hình (điện thoại) */
@@ -51,6 +51,7 @@ nav {
   object-fit: contain;
   user-select: none;
 }
+
 .menu-items {
   display: flex;
   gap: 24px;
@@ -74,7 +75,6 @@ nav {
   box-shadow: 0 0 8px 2px rgba(0, 255, 204, 0.6); /* Viền sáng mờ */
   background-color: rgba(0, 255, 204, 0.1); /* Hộp mờ mờ */
 }
-
 
 .menu-toggle {
   display: none;
@@ -185,5 +185,3 @@ ul {
     display: block;
   }
 }
-
-
