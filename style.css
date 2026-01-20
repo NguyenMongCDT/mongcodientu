@@ -33,8 +33,18 @@ nav {
   z-index: 100;
   padding: 14px 20px;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   gap: 24px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav .logo {
+  font-weight: 900;
+  font-size: 1.6rem;
+  color: var(--teal);
+  letter-spacing: 3px;
+  user-select: none;
 }
 
 nav a {
@@ -49,6 +59,13 @@ nav a {
 nav a:hover, nav a:focus {
   color: var(--teal);
   outline: none;
+}
+
+nav .menu-icon {
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #e9f9f7;
+  display: none;
 }
 
 section {
