@@ -39,15 +39,21 @@ nav {
   font-family: 'Montserrat', sans-serif;
 }
 
-nav .logo {
+.logo-link {
   font-weight: 900;
   font-size: 1.6rem;
   color: var(--teal);
   letter-spacing: 3px;
   user-select: none;
+  text-decoration: none;
 }
 
-nav a {
+.menu-items {
+  display: flex;
+  gap: 24px;
+}
+
+.menu-items a {
   color: #e9f9f7;
   font-weight: 600;
   font-size: 1rem;
@@ -56,16 +62,19 @@ nav a {
   transition: color 0.3s ease;
 }
 
-nav a:hover, nav a:focus {
+.menu-items a:hover,
+.menu-items a:focus {
   color: var(--teal);
   outline: none;
 }
 
-nav .menu-icon {
+.menu-toggle {
+  display: none;
   font-size: 1.8rem;
   cursor: pointer;
+  background: none;
+  border: none;
   color: #e9f9f7;
-  display: none;
 }
 
 section {
@@ -146,5 +155,25 @@ ul {
   }
   .grid {
     grid-template-columns: 1fr;
+  }
+  .menu-items {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: var(--card);
+    border-radius: 8px;
+    padding: 12px 20px;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.35);
+    z-index: 200;
+    width: 150px;
+  }
+  .menu-items.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
   }
 }
