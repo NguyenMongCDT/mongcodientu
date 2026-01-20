@@ -8,11 +8,26 @@
 </head>
 <body>
   <nav>
+  <a href="index.html" class="logo-link">
+    <span class="logo-text">MONGCODIENTU</span>
+  </a>
+  <div class="menu-items">
     <a href="index.html">Trang chủ</a>
     <a href="phanmem.html">Phần mềm</a>
     <a href="huongdan.html">Hướng dẫn</a>
     <a href="lienhe.html">Liên hệ</a>
-  </nav>
+  </div>
+  <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+</nav>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menuItems = document.querySelector('.menu-items');
+    menuToggle.addEventListener('click', function() {
+      menuItems.classList.toggle('active');
+    });
+  });
+</script>
   <section>
     <h1>Danh sách phần mềm</h1>
     <div class="grid">
@@ -25,4 +40,5 @@
     </div>
   </section>
 </body>
+
 </html>
