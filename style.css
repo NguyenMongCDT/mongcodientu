@@ -40,9 +40,19 @@ nav {
 }
 
 .logo-link {
-  display: flex;
-  align-items: center;
+  font-weight: 900;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  user-select: none;
+  text-decoration: none;
+  background: linear-gradient(90deg, #00ffcc, #00e6b8, #00ffaa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  display: inline-block;
 }
+
 
 .logo-image {
   height: 40px;       /* Chiều cao mặc định trên máy tính */
@@ -185,3 +195,4 @@ ul {
     display: block;
   }
 }
+
