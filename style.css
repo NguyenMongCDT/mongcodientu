@@ -1,0 +1,133 @@
+/* style.css - CSS chung cho trang Mongcodientu */
+
+:root {
+  --teal: #00ffcc;
+  --teal-soft: #00e6b8;
+  --bg: #0b0f12;
+  --card: #11161b;
+  --text: #ffffff;
+  --muted: #b7c7c7;
+  --accent: #00ffaa;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background: radial-gradient(1200px 600px at 20% 0%, #0f1419 0%, var(--bg) 60%);
+  color: var(--text);
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+nav {
+  background: linear-gradient(180deg, rgba(0,0,0,0.55), rgba(0,0,0,0.25));
+  backdrop-filter: saturate(1.2) blur(8px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+nav a {
+  color: #e9f9f7;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  opacity: 0.9;
+  transition: color 0.3s ease;
+}
+
+nav a:hover, nav a:focus {
+  color: var(--teal);
+  outline: none;
+}
+
+section {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h1, h2 {
+  font-family: 'Montserrat', 'Inter', sans-serif;
+  color: var(--teal);
+  margin-bottom: 16px;
+}
+
+p {
+  color: var(--muted);
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: linear-gradient(180deg, var(--card), #0d1216);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.35);
+  color: #cffff6;
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.card p {
+  color: var(--muted);
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+.card a {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 700;
+  background: var(--teal);
+  color: #00110e;
+  text-decoration: none;
+  transition: filter 0.3s ease;
+}
+
+.card a:hover {
+  filter: brightness(1.08);
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+@media (max-width: 640px) {
+  nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+  section {
+    margin: 20px 10px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
