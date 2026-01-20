@@ -45,7 +45,7 @@ nav {
   letter-spacing: 3px;
   user-select: none;
   text-decoration: none;
-  background: linear-gradient(90deg, #00ffcc, #00e6b8, #00ffaa);
+  background: linear-gradient(90deg, #c0c0c0, #e0e0e0, #a0a0a0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -195,4 +195,5 @@ ul {
     display: block;
   }
 }
+
 
