@@ -8,13 +8,26 @@
 </head>
 <body>
 <nav>
-  <div class="logo">MONGCODIENTU</div>
-  <a href="index.html">Trang chủ</a>
-  <a href="phanmem.html">Phần mềm</a>
-  <a href="huongdan.html">Hướng dẫn</a>
-  <a href="lienhe.html">Liên hệ</a>
-  <div class="menu-icon">&#9776;</div>
+  <a href="index.html" class="logo-link">
+    <span class="logo-text">MONGCODIENTU</span>
+  </a>
+  <div class="menu-items">
+    <a href="index.html">Trang chủ</a>
+    <a href="phanmem.html">Phần mềm</a>
+    <a href="huongdan.html">Hướng dẫn</a>
+    <a href="lienhe.html">Liên hệ</a>
+  </div>
+  <button class="menu-toggle" aria-label="Toggle menu">☰</button>
 </nav>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menuItems = document.querySelector('.menu-items');
+    menuToggle.addEventListener('click', function() {
+      menuItems.classList.toggle('active');
+    });
+  });
+</script>
   <section>
     <h1>Chào mừng bạn đến với Mongcodientu</h1>
     <p>Mongcodientu là nền tảng chia sẻ phần mềm học tập miễn phí dành cho sinh viên kỹ thuật. Tất cả phần mềm đã được kiểm duyệt, đảm bảo tương thích với Windows 10/11 và phục vụ tốt cho học tập, thực hành và nghiên cứu.</p>
@@ -24,3 +37,4 @@
 </body>
 
 </html>
+
