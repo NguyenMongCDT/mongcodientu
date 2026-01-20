@@ -45,36 +45,9 @@ nav {
   letter-spacing: 3px;
   user-select: none;
   text-decoration: none;
-  background: linear-gradient(90deg, #c0c0c0, #e0e0e0, #a0a0a0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+  color: var(--teal);
   display: inline-block;
-  position: relative;
-  transition: filter 0.3s ease;
 }
-
-.logo-link::after {
-  content: '';
-  position: absolute;
-  top: -4px;
-  left: -6px;
-  right: -6px;
-  bottom: -4px;
-  border-radius: 6px;
-  box-shadow: 0 0 8px 3px rgba(192, 192, 192, 0.6);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
-}
-
-.logo-link:hover::after,
-.logo-link:focus::after {
-  opacity: 1;
-  filter: brightness(1.2);
-}
-
 .logo-image {
   height: 40px;       /* Chiều cao mặc định trên máy tính */
   max-height: 8vw;    /* Giới hạn chiều cao tối đa theo % chiều rộng màn hình (điện thoại) */
@@ -216,3 +189,4 @@ ul {
     display: block;
   }
 }
+
