@@ -41,14 +41,16 @@ nav {
 
 
 .logo-link {
-  font-weight: 900;
-  font-size: 1.6rem;
-  color: var(--teal);
-  letter-spacing: 3px;
-  user-select: none;
-  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
-
+.logo-image {
+  height: 40px;       /* Chiều cao mặc định trên máy tính */
+  max-height: 8vw;    /* Giới hạn chiều cao tối đa theo % chiều rộng màn hình (điện thoại) */
+  width: auto;        /* Giữ tỉ lệ ảnh */
+  object-fit: contain;
+  user-select: none;
+}
 .menu-items {
   display: flex;
   gap: 24px;
@@ -183,4 +185,5 @@ ul {
     display: block;
   }
 }
+
 
